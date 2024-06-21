@@ -1,1 +1,1 @@
-This the FullStack ToDo application using Django and React
+This the FullStack ToDo application using Django for backend  and React as backend
