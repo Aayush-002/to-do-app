@@ -1,0 +1,1 @@
+This the FullStack ToDo application using Django and React
