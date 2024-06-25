@@ -55,7 +55,7 @@ class TodoListView(generics.ListCreateAPIView):
 
         todo = Todo.objects.filter(user=user) 
         return todo
-    
+   
 
 class TodoDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = TodoSerializer
