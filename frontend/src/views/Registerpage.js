@@ -1,25 +1,28 @@
-import { useState, useContext } from "react";
-import React from 'react';
-import { Link } from 'react-router-dom';
-import AuthContext from "../context/AuthContext";
+import {useState, useContext} from 'react'
+import { Link } from 'react-router-dom'
+import AuthContext from '../context/AuthContext'
+
 
 function Registerpage() {
-  const [email, setEmail] = useState("");
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [password2, setPassword2] = useState("");
 
-  const { registerUser } = useContext(AuthContext);
+  const [email, setEmail] = useState("")
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [password2, setPassword2] = useState("")
+
+  const {registerUser} = useContext(AuthContext)
 
   console.log(email);
   console.log(username);
   console.log(password);
   console.log(password2);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    registerUser(email, username, password, password2);
-  };
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+    registerUser(email, username, password, password2)
+  }
+  
 
   return (
     <div>
@@ -62,7 +65,7 @@ function Registerpage() {
                               id="form2Example17"
                               className="form-control form-control-lg"
                               placeholder="Email Address"
-                              onChange={(e) => setEmail(e.target.value)}
+                              onChange={e => setEmail(e.target.value)}
                             />
                           </div>
                           <div className="form-outline mb-4">
@@ -71,7 +74,8 @@ function Registerpage() {
                               id="form2Example17"
                               className="form-control form-control-lg"
                               placeholder="Username"
-                              onChange={(e) => setUsername(e.target.value)}
+                              onChange={e => setUsername(e.target.value)}
+
                             />
                           </div>
                           <div className="form-outline mb-4">
@@ -80,7 +84,8 @@ function Registerpage() {
                               id="form2Example17"
                               className="form-control form-control-lg"
                               placeholder="Password"
-                              onChange={(e) => setPassword(e.target.value)}
+                              onChange={e => setPassword(e.target.value)}
+
                             />
                           </div>
                           <div className="form-outline mb-4">
@@ -89,7 +94,8 @@ function Registerpage() {
                               id="form2Example27"
                               className="form-control form-control-lg"
                               placeholder="Confirm Password"
-                              onChange={(e) => setPassword2(e.target.value)}
+                              onChange={e => setPassword2(e.target.value)}
+
                             />
                           </div>
                           <div className="pt-1 mb-4">
@@ -103,16 +109,18 @@ function Registerpage() {
                           <a className="small text-muted" href="#!">
                             Forgot password?
                           </a>
-                          <p
-                            className="mb-5 pb-lg-2"
-                            style={{ color: "#393f81" }}
-                          >
+                          <p className="mb-5 pb-lg-2" style={{ color: "#393f81" }}>
                             Already have an account?{" "}
                             <Link to="/login" style={{ color: "#393f81" }}>
                               Login Now
                             </Link>
                           </p>
-                          
+                          <a href="#!" className="small text-muted">
+                            Terms of use.
+                          </a>
+                          <a href="#!" className="small text-muted">
+                            Privacy policy
+                          </a>
                         </form>
                       </div>
                     </div>
@@ -135,9 +143,10 @@ function Registerpage() {
           </div>
           {/* Copyright */}
         </footer>
-      </>
+    </>
+
     </div>
-  );
+  )
 }
 
-export default Registerpage;
+export default Registerpage
