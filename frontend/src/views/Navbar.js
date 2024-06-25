@@ -59,9 +59,14 @@ function Navbar() {
               {token !== null && (
                 <>
                   <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">
+                    <link class="nav-link" to="/dashboard">
                       Dashboard
-                    </a>
+                    </link>
+                  </li>
+                  <li class="nav-item">
+                    <link class="nav-link" to="/Todo">
+                      Todo
+                    </link>
                   </li>
                   <li class="nav-item">
                     <a
