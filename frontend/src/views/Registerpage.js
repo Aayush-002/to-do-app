@@ -35,7 +35,7 @@ function Registerpage() {
                   <div className="row g-0">
                     <div className="col-md-6 col-lg-5 d-none d-md-block">
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                        src="https://c8.alamy.com/comp/W5YT9R/1980s-man-computer-systems-salesman-standing-looking-at-camera-in-a-room-with-early-hardware-monitors-and-keyboards-ko1299-pht001-hars-communicating-united-states-copy-space-half-length-computers-persons-grown-up-males-confidence-expressions-screens-north-america-work-place-eye-contact-north-american-suit-and-tie-selling-early-networking-monitors-innovation-pride-opportunity-authority-occupations-high-tech-connection-electric-appliance-hardware-stylish-texas-instruments-communicate-high-tech-keyboards-mid-adult-mid-adult-man-programmer-salesmen-caucasian-ethnicity-old-fashioned-W5YT9R.jpg"
                         alt="login form"
                         className="img-fluid"
                         style={{ borderRadius: "1rem 0 0 1rem" }}
@@ -47,10 +47,10 @@ function Registerpage() {
                           <div className="d-flex align-items-center mb-3 pb-1">
                             <i
                               className="fas fa-cubes fa-2x me-3"
-                              style={{ color: "#ff6219" }}
+                              style={{ color: "#ff6217" }}
                             />
                             <span className="h2 fw-bold mb-0">
-                              Welcome to <b>Desphixs👋</b>
+                              Welcome to <b>To-do App</b>
                             </span>
                           </div>
                           <h5
